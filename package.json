@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "builder": "build"
+    "builder": "build",
+    "compile": "electron-webpack",
+    "build": "npm run compile && npm run builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -19,7 +21,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8",
-    "electron-builder": "^19.41.0"
+    "electron-builder": "^19.41.0",
+    "electron-webpack": "^1.9.0",
+    "webpack": "^3.8.1"
   },
   "electronWebpack": {
     "main": {
